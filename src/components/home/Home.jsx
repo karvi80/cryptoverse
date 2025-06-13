@@ -68,7 +68,7 @@ const Home = () => {
       <div className="see-more">
         <Link to="/cryptocurrencies" style={{ textDecoration: "none" }}>
           <div className="coin-see-more">
-            <h2>Show More &gt;&gt;</h2>
+            <p>Show More &gt;&gt;</p>
           </div>
         </Link>
       </div>
@@ -80,9 +80,7 @@ const Home = () => {
       <div className="see-more">
         <Link to="/news" style={{ textDecoration: "none" }}>
           <div className="coin-see-more">
-            <h2>
-              Show More <RxDoubleArrowRight />
-            </h2>
+            <p>Show More &gt;&gt;</p>
           </div>
         </Link>
       </div>

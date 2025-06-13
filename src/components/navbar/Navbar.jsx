@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cryptocurrency from "../../images/cryptocurrency.png";
 
-import {
-  AiOutlineHome,
-  AiOutlineMoneyCollect,
-  AiOutlineMenu,
-} from "react-icons/ai";
-import { RiExchangeDollarLine, RiNewspaperLine } from "react-icons/ri";
-
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -16,13 +9,15 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-logo">
+      <Link to="/" className="navbar-logo">
         <img src={cryptocurrency} alt="logo" />
         <h3>Cryptoverse</h3>
-      </div>
+      </Link>
 
       <div className="navbar-container-menu">
-        <AiOutlineMenu
+        <img
+          src="/icons/menu.svg"
+          alt="menu"
           className="menu-icon"
           onClick={() => setMenuIsOpen(!menuIsOpen)}
         />
@@ -31,28 +26,28 @@ const Navbar = () => {
       <div className="navbar-container">
         <div>
           <Link to="/" className="navbar-container-link">
-            <AiOutlineHome className="icon" />
+            <img src="/icons/home.svg" alt="home" className="icon" />
             <h4>Home</h4>
           </Link>
         </div>
 
         <div>
           <Link to="/cryptocurrencies" className="navbar-container-link">
-            <AiOutlineMoneyCollect className="icon" />
+            <img src="/icons/crypto.svg" alt="crypto" className="icon" />
             <h4>Cryptocurrencies</h4>
           </Link>
         </div>
 
         <div>
           <Link to="/exchanges" className="navbar-container-link">
-            <RiExchangeDollarLine className="icon" />
+            <img src="/icons/exchange.svg" alt="exchange" className="icon" />
             <h4>Exchanges</h4>
           </Link>
         </div>
 
         <div>
           <Link to="/news" className="navbar-container-link">
-            <RiNewspaperLine className="icon" />
+            <img src="/icons/news.svg" alt="news" className="icon" />
             <h4>News</h4>
           </Link>
         </div>
@@ -62,28 +57,28 @@ const Navbar = () => {
         <div className="mini-navbar-container">
           <div>
             <Link to="/" className="navbar-container-link">
-              <AiOutlineHome className="icon" />
+              <img src="/icons/home.svg" alt="home" className="icon" />
               <h4>Home</h4>
             </Link>
           </div>
 
           <div>
             <Link to="/cryptocurrencies" className="navbar-container-link">
-              <AiOutlineMoneyCollect className="icon" />
+              <img src="/icons/icons.svg" alt="crypto" className="icon" />
               <h4>Cryptocurrencies</h4>
             </Link>
           </div>
 
           <div>
             <Link to="/exchanges" className="navbar-container-link">
-              <RiExchangeDollarLine className="icon" />
+              <img src="/icons/crypto.svg" alt="crypto" className="icon" />
               <h4>Exchanges</h4>
             </Link>
           </div>
 
           <div>
             <Link to="/news" className="navbar-container-link">
-              <RiNewspaperLine className="icon" />
+              <img src="/icons/news.svg" alt="news" className="icon" />
               <h4>News</h4>
             </Link>
           </div>
