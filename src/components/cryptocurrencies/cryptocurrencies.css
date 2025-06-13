@@ -1,0 +1,15 @@
+.search-crypto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 0 0 50px;
+  width: 200px;
+  height: 40px;
+}
+
+.search-crypto input {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 0 5px;
+}

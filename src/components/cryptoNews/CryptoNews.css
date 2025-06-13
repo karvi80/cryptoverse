@@ -1,0 +1,62 @@
+.crypto-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.crypto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  width: 220px;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.crypto-card:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+}
+
+.cryptonewsCard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify: center;
+  text-align: center;
+}
+
+.cryptonewsCard-header h4 {
+  color: #191934;
+}
+
+.cryptonewsCard-thumbnail {
+  width: 150px;
+  height: 120px;
+}
+
+.cryptonewsCard-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cryptonewsCard-footer h4 {
+  color: #191934;
+}
+
+.select-crypto {
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 50px;
+  padding: 5px;
+}

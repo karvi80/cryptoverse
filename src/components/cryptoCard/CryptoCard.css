@@ -1,0 +1,54 @@
+.coins-card {
+  width: 200px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 0 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.coin-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #191934;
+  width: 98%;
+  padding: 10px 5px;
+}
+
+.coin-card-header h4 {
+  font-weight: 600;
+  color: #191934;
+}
+
+.coin-card-header img {
+  width: 30px;
+  height: 30px;
+}
+
+.coin-card-body {
+  justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.coin-card-body h5 {
+  font-weight: 16;
+  color: #191934;
+}
+
+.span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.coins-card:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.2s;
+}

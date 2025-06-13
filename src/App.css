@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  overflow: hidden;
+  background-color: #f7f7f7;
+}
+
+.main-page {
+  flex-grow: 999;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    flex-direction: column;
+  }
+}

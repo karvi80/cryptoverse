@@ -1,0 +1,50 @@
+.crypto-exchanges {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.exchanges-table {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.exchange-header {
+  flex: 0.2;
+  text-align: left;
+}
+
+.exchange-body {
+  width: 0.2;
+  height: auto;
+  padding: 10px;
+  border-top: 1px solid #000;
+  text-align: left;
+  background-color: #fff;
+}
+
+.coin-icon {
+  width: 35px;
+  height: 35px;
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 500px) {
+  .exchanges-table {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .exchange-header {
+    font-size: 12px;
+  }
+}
+
+.no-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
