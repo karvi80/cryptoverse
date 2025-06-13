@@ -6,8 +6,6 @@ import { useGetCryptosQuery } from "../../services/cryptoApi";
 
 import { Cryptocurrencies, CryptoNews } from "../index";
 
-import { RxDoubleArrowRight } from "react-icons/rx";
-
 import "./Home.css";
 import Loader from "../Loader";
 
@@ -70,9 +68,7 @@ const Home = () => {
       <div className="see-more">
         <Link to="/cryptocurrencies" style={{ textDecoration: "none" }}>
           <div className="coin-see-more">
-            <h2>
-              Show More <RxDoubleArrowRight />
-            </h2>
+            <h2>Show More &gt;&gt;</h2>
           </div>
         </Link>
       </div>
