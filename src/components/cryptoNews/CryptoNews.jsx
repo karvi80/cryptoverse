@@ -8,7 +8,6 @@ import {
   useGetCryptocoinsListPairsQuery,
 } from "../../services/cryptoNewsApi";
 
-import { RxDoubleArrowRight } from "react-icons/rx";
 
 const CryptoNews = ({ simplified }) => {
   const [page, setPage] = useState(1);
@@ -96,7 +95,7 @@ const CryptoNews = ({ simplified }) => {
               height: "40px",
             }}
           >
-            Load next Page <RxDoubleArrowRight />
+            Load next Page &gt;&gt;
           </button>
         </div>
       )}

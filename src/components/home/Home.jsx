@@ -24,36 +24,63 @@ const Home = () => {
             <div className="cryptoMarket-section">
               <div className="cryptoMarket-card">
                 <h5>Total Cryptocurrencies</h5>
-                <h4>{millify(globalStats.totalCoins)}</h4>
+                <div className="cyptopMarket-card-content">
+                  <img
+                    src="/icons/dollar.svg"
+                    alt="dollar"
+                    className="cryptoMarket-card-content-icon"
+                  />
+                  <h4>{millify(globalStats.totalCoins)}</h4>
+                </div>
               </div>
 
               <div className="cryptoMarket-card">
                 <h5>Total Exchange</h5>
-                <h4>{globalStats.totalExchanges}</h4>
+
+                <div className="cyptopMarket-card-content">
+                  <img src="/icons/currencyExchange.svg" alt="currencyExchange" className="cryptoMarket-card-content-icon" />
+                  <h4>{globalStats.totalExchanges}</h4>
+                </div>
               </div>
             </div>
 
             <div className="cryptoMarket-section">
               <div className="cryptoMarket-card">
                 <h5>Total Market Cap</h5>
-                <h4>{millify(globalStats.totalMarketCap)}</h4>
+
+                <div className="cyptopMarket-card-content">
+                  <img src="/icons/marketCap.svg" alt="marketCap" className="cryptoMarket-card-content-icon"/>
+                  <h4>{millify(globalStats.totalMarketCap)}</h4>
+                </div>
               </div>
 
               <div className="cryptoMarket-card">
                 <h5>Total 24h Volum</h5>
-                <h4>{millify(globalStats.total24hVolume)}</h4>
+
+                <div className="cyptopMarket-card-content">
+                  <img src="/icons/electricalSensor.svg" alt="electricalSensor" className="cryptoMarket-card-content-icon" />
+                  <h4>{millify(globalStats.total24hVolume)}</h4>
+                </div>
               </div>
             </div>
 
             <div className="cryptoMarket-section">
               <div className="cryptoMarket-card">
                 <h5>Total Cryptocurrencies</h5>
-                <h4>{globalStats.total}</h4>
+
+                <div className="cyptopMarket-card-content">
+                  <img src="/icons/global.svg" alt="global" className="cryptoMarket-card-content-icon" />
+                  <h4>{globalStats.total}</h4>
+                </div>
               </div>
 
               <div className="cryptoMarket-card">
                 <h5>Total Markets</h5>
-                <h4>{millify(globalStats.totalMarkets)}</h4>
+
+                <div className="cyptopMarket-card-content">
+                  <img src="/icons/neutralTrading.svg" alt="neutralTrading" className="cryptoMarket-card-content-icon" />
+                  <h4>{millify(globalStats.totalMarkets)}</h4>
+                </div>
               </div>
             </div>
           </div>

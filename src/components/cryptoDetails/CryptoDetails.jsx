@@ -7,20 +7,6 @@ import { useGetCryptoDetailsQuery } from "../../services/cryptoApi";
 
 import Loader from "../Loader";
 
-import {
-  AiOutlineDollarCircle,
-  AiOutlineTrophy,
-  AiOutlineBarChart,
-  AiOutlineCheck,
-  AiOutlineGlobal,
-} from "react-icons/ai";
-import { FaHackerrank } from "react-icons/fa";
-import {
-  FcElectricalSensor,
-  FcCurrencyExchange,
-  FcNeutralTrading,
-} from "react-icons/fc";
-import { GrMoney } from "react-icons/gr";
 
 import "./CryptoDetails.css";
 
@@ -37,20 +23,20 @@ const CryptoDetails = () => {
     {
       title: "Price to USD",
       value: `$ ${cryptoDetails?.price && millify(cryptoDetails?.price)}`,
-      icon: <AiOutlineDollarCircle />,
+      icon: <img src="/icons/dollar.svg" alt="dollar" className="coin-stats-icon"/>,
     },
-    { title: "Rank", value: cryptoDetails?.rank, icon: <FaHackerrank /> },
+    { title: "Rank", value: cryptoDetails?.rank, icon: <img src="/icons/hackerrank.svg" alt="hackerrank" className="coin-stats-icon" /> },
     {
       title: "24h Volume",
       value: `${millify(cryptoDetails?.["24hVolume"])}`,
-      icon: <FcElectricalSensor />,
+      icon: <img src="/icons/electricalSensor.svg" alt="electricalSensor" className="coin-stats-icon" />,
     },
     {
       title: "Market Cap",
       value: `$ ${
         cryptoDetails?.marketCap && millify(cryptoDetails?.marketCap)
       }`,
-      icon: <GrMoney />,
+      icon: <img src="/icons/marketCap.svg" alt="marketCap" className="coin-stats-icon"  />,
     },
     {
       title: "All-time-high(daily avg.)",
@@ -58,7 +44,7 @@ const CryptoDetails = () => {
         cryptoDetails?.allTimeHigh?.price &&
         millify(cryptoDetails?.allTimeHigh?.price)
       }`,
-      icon: <AiOutlineTrophy />,
+      icon: <img src="/icons/trophy.svg" alt="trophy" className="coin-stats-icon"  />,
     },
   ];
 
@@ -66,24 +52,24 @@ const CryptoDetails = () => {
     {
       title: "Number Of Markets",
       value: cryptoDetails?.numberOfMarkets,
-      icon: <AiOutlineBarChart />,
+      icon: <img src="/icons/chart.svg" alt="chart" className="coin-stats-icon"  />,
     },
     {
       title: "Number Of Exchanges",
       value: cryptoDetails?.numberOfExchanges,
-      icon: <FcCurrencyExchange />,
+      icon: <img src="/icons/currencyExchange.svg" alt="currencyExchange" className="coin-stats-icon"  />,
     },
     {
       title: "Aprroved Supply",
       value: cryptoDetails?.supply?.confirmed ? "" : "",
-      icon: <AiOutlineCheck />,
+      icon: <img src="/icons/check.svg" alt="check" className="coin-stats-icon"  />,
     },
     {
       title: "Total Supply",
       value: `$ ${
         cryptoDetails?.supply?.total && millify(cryptoDetails?.supply?.total)
       }`,
-      icon: <AiOutlineGlobal />,
+      icon: <img src="/icons/global.svg" alt="global" className="coin-stats-icon"  />,
     },
     {
       title: "Circulating Supply",
@@ -91,7 +77,7 @@ const CryptoDetails = () => {
         cryptoDetails?.supply?.circulating &&
         millify(cryptoDetails?.supply?.circulating)
       }`,
-      icon: <FcNeutralTrading />,
+      icon: <img src="/icons/neutralTrading.svg" alt="neutralTrading" className="coin-stats-icon" />,
     },
   ];
 
@@ -141,9 +127,9 @@ const CryptoDetails = () => {
               {stats.map(({ icon, title, value }) => (
                 <div key={title} className="coin-stats">
                   <div className="coin-stats-name">
-                    <h4>
+                   
                       {icon} {title}
-                    </h4>
+                    
                   </div>
                   <h4>{value}</h4>
                 </div>
@@ -163,9 +149,9 @@ const CryptoDetails = () => {
               {genericStats.map(({ icon, title, value }) => (
                 <div key={title} className="coin-stats">
                   <div className="coin-stats-name">
-                    <h4>
+                  
                       {icon} {title}
-                    </h4>
+                    
                   </div>
                   <h4>{value}</h4>
                 </div>

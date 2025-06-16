@@ -37,6 +37,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #191934;
+  padding: 4px 0;
 }
 
 .coin-stats:hover {
@@ -45,8 +46,18 @@
 
 .coin-stats-name {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  gap: 5px;
+}
+
+.coin-stats-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .stats-container {
