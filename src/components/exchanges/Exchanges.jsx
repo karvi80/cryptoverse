@@ -1,7 +1,6 @@
 import React from "react";
 import millify from "millify";
 import { useGetCryptoExchangesQuery } from "../../services/cryptoApi";
-import { AiOutlineLink } from "react-icons/ai";
 
 import "./Exchanges.css";
 import Loader from "../Loader";
@@ -55,7 +54,11 @@ const Exchanges = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <AiOutlineLink />
+                    <img
+                      src="/icons/ling.svg"
+                      alt="link"
+                      className="exchange-body-icon"
+                    />
                   </a>
                 </td>
               </tbody>

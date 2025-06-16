@@ -24,6 +24,11 @@
   background-color: #fff;
 }
 
+.exchange-body-icon {
+  width: 20px;
+  height: 20px;
+}
+
 .coin-icon {
   width: 35px;
   height: 35px;
